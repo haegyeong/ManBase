@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.jmpt.manbase">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:name=".app.ManBaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity"
+            android:hardwareAccelerated="false"
+            ></activity>
+
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ADDetailActvity" />
+        <activity android:name=".activity.ShowActivty" />
+        <activity android:name=".activity.SchoolActivity" />
+        <activity android:name=".activity.TodayActvity" />
+        <activity android:name=".activity.TodayDetailActivity" />
+        <activity android:name=".activity.BuyPageDetailActivity" />
+        <activity android:name=".activity.ChaoPinActivity" />
+        <activity android:name=".activity.DaylyActivity" />
+        <activity android:name=".activity.DaylyDetailActivity" />
+        <activity android:name=".activity.JingPinActivity" />
+        <activity android:name=".activity.QinglvActivity" />
+        <activity android:name=".activity.SingleListActivity" />
+        <activity android:name=".activity.GroupDetailListActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_coupon_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_ad"
+        android:layout_marginLeft="8dp"
+        android:text="￥356.30"
+        android:textColor="#f00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_coupon_price"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_coupon_price"
+        android:text="￥499.30"
+        android:textColor="@color/defaultText"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_coupon_price"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/tv_price"
+        android:drawableLeft="@mipmap/zhengping"
+        android:text="天猫正品"
+        android:textColor="@color/defaultText"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_coupon_price"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textColor="#a444"
+        android:textSize="14sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGrop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/shop_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_buy_detail"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="商品信息"
+            android:textColor="@drawable/selector_text" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_buy_detail"
+            android:button="@null"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="店铺与评论"
+            android:textColor="@drawable/selector_text" />
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="attTitle">
+        <attr name="iv_left" format="reference" />
+        <attr name="iv_right" format="reference" />
+        <attr name="mytitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="itemStyle">
+        <attr name="iv_icon" format="reference" />
+        <attr name="myinfo" format="string" />
+        <attr name="titleItem" format="string" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:drawablePadding="1dp"
+        android:drawableTop="@mipmap/collection_big_heart_red_off"
+        android:text="收藏"
+        android:textColor="@color/defaultText" />
+
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@id/tv_save"
+        android:drawablePadding="1dp"
+        android:drawableTop="@mipmap/share2"
+        android:text="分享"
+        android:textColor="@color/defaultText" />
+
+    <TextView
+        android:id="@+id/tv_gobuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/gobuy_bg"
+        android:drawableLeft="@mipmap/search_white"
+        android:drawablePadding="1dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:text="去天猫购买"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>

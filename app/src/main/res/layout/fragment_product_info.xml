@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/product_info_text"
+        android:text="品牌名称：" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/product_info_brack"
+        android:layout_toRightOf="@id/name"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/material"
+        style="@style/product_info_text"
+        android:layout_below="@+id/name"
+        android:text="材料：" />
+
+    <TextView
+        android:id="@+id/tv_material"
+        style="@style/product_info_brack"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@id/material"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/style"
+        style="@style/product_info_text"
+        android:layout_below="@id/material"
+        android:text="基础风格：" />
+
+    <TextView
+        android:id="@+id/tv_style"
+        style="@style/product_info_brack"
+        android:layout_below="@id/tv_material"
+        android:layout_toRightOf="@id/style"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/number"
+        style="@style/product_info_text"
+        android:layout_below="@id/style"
+        android:text="货号 ：" />
+
+    <TextView
+        android:id="@+id/tv_num_iid"
+        style="@style/product_info_brack"
+        android:layout_below="@id/style"
+        android:layout_toRightOf="@id/number"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/color"
+        style="@style/product_info_text"
+        android:layout_below="@id/number"
+        android:text="款式颜色 ：" />
+
+    <TextView
+        android:id="@+id/tv_color"
+        style="@style/product_info_brack"
+        android:layout_below="@id/tv_num_iid"
+        android:layout_toRightOf="@id/color"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/season"
+        style="@style/product_info_text"
+        android:layout_below="@id/tv_color"
+        android:text="使用季节 ：" />
+
+    <TextView
+        android:id="@+id/tv_season"
+        style="@style/product_info_brack"
+        android:layout_below="@id/tv_color"
+        android:layout_toRightOf="@id/season"
+        android:text="" />
+
+    <cn.jmpt.manbase.View.MyListView
+        android:id="@+id/lv_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_season"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>

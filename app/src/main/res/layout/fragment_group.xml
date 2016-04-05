@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/defaultbackground"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/defaultbackground"
+        android:orientation="vertical">
+
+        <cn.jmpt.manbase.View.TitleLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:iv_right="@mipmap/search2_blue"
+            app:mytitle="搭配" />
+
+        <cn.jmpt.manbase.View.MyListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:dividerHeight="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="搭配精选"
+            android:textColor="#a000"
+            android:textSize="22sp" />
+
+        <cn.jmpt.manbase.View.MyGridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#fff"
+            android:horizontalSpacing="8dp"
+            android:numColumns="2"
+            android:verticalSpacing="8dp" />
+
+    </LinearLayout>
+
+</ScrollView>

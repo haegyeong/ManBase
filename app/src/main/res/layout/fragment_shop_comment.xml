@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:background="@color/defaultText"
+        android:layout_marginBottom="8dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_below="@+id/line"
+        android:id="@+id/tv_shopeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/shop"
+        android:drawablePadding="3dp"
+        android:text="viishow旗舰店"
+        android:textColor="#a000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_shopeName"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/tv_shopeName"
+        android:background="@drawable/comment_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="评论来自天猫"
+        android:textColor="#fff"
+        android:textSize="12sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shopeName"
+        android:layout_marginTop="5dp"
+        android:text="发货速度"
+        android:textColor="@color/defaultText" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_below="@id/speed"
+        android:layout_width="match_parent"
+        android:background="@color/defaultText"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shopeName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/speed"
+        android:text="4.8"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/speed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="描述相符"
+        android:textColor="@color/defaultText" />
+
+    <TextView
+        android:id="@+id/tv_desc_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_shopeName"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/desc"
+        android:text="4.3"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/tv_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/speed"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:text="4.6"
+        android:textColor="#f00" />
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/speed"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@id/tv_service"
+        android:text="服务态度"
+        android:textColor="@color/defaultText" />
+
+
+    <TextView
+        android:id="@+id/tv_userComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"
+        android:drawableLeft="@mipmap/talk_about"
+        android:drawablePadding="3dp"
+        android:text="用户评论" />
+
+    <cn.jmpt.manbase.View.MyListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_userComment"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_heard"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_heard"
+        android:text="忠孝两全！"
+        android:textColor="@color/colorTheme"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_username"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/iv_heard"
+        android:text="14:56"
+        android:textColor="@color/defaultText"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_heard"
+        android:layout_marginTop="5dp"
+        android:text="聊五毛钱的😂QQ。205487771"
+        android:textColor="@color/defaultText" />
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_below="@id/tv_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/iv_show"
+        android:layout_below="@id/iv_show"
+        android:drawableLeft="@mipmap/comment"
+        android:drawablePadding="5dp"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/tv_like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_show"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@mipmap/zan_unselected2"
+        android:drawablePadding="5dp"
+        android:text="80" />
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/iv_show"
+        android:layout_below="@id/iv_show"
+        android:drawableLeft="@mipmap/share_tran2"
+        android:drawablePadding="5dp"
+        android:text="分享" />
+
+</RelativeLayout>

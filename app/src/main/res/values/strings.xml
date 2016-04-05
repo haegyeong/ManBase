@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ManBase</string>
+
+    <array name="tabName">
+        <item>推荐</item>
+        <item>最低</item>
+        <item>最高</item>
+        <item>最新</item>
+    </array>
+    <array name="Jinpin">
+        <item>9块9</item>
+        <item>19块9</item>
+        <item>29块9</item>
+    </array>
+    <array name="Qinglv">
+        <item>情侣精选</item>
+        <item>送女友</item>
+    </array>
+
+</resources>

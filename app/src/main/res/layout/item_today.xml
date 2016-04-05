@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@id/iv_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#88000000"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/tv_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="今天"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_lowtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_today"
+            android:layout_toRightOf="@id/tv_today"
+            android:drawableLeft="@mipmap/square_down"
+            android:text="12℃"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_hightemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_today"
+            android:layout_toRightOf="@id/tv_lowtemp"
+            android:drawableLeft="@mipmap/square_up"
+            android:text="20℃"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_today"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@mipmap/location"
+            android:drawablePadding="3dp"
+            android:text="深圳"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_city_name"
+            android:layout_marginTop="2dp"
+            android:background="#fff" />
+
+        <TextView
+            android:id="@+id/tv_long_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:paddingRight="5dp"
+            android:text="针织衫内搭衬衫十分百搭，外面穿一件3D修身呢风衣温暖有型，英伦大翻领和隐藏式门襟简约韩范又成熟，下搭休闲小脚裤和皮鞋，日常、约会、职场都可以穿。"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_readDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:drawablePadding="3dp"
+            android:drawableRight="@mipmap/back_bottom_white"
+            android:text="查看搭配详情"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
